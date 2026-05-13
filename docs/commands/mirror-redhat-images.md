@@ -67,7 +67,7 @@ docker pull quay.io/ibmmas/cli:13.17.0
 docker run -ti --rm -v /mnt/storage:/mnt/workspace quay.io/ibmmas/cli:13.17.0 mas mirror-redhat-images \
   --mode to-filesystem \
   --dir /mnt/workspace \
-  --pull-secret /mnt/local/pull-secret.json
+  --pullsecret /mnt/local/pull-secret.json
   --mirror-platform \
   --mirror-operators \
   --release 4.16 \
